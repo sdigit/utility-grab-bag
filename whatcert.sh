@@ -26,14 +26,6 @@ OSSL="openssl x509 -noout -in ${TMPFILE}"
 getcert ${TMPFILE} ${TARGET}
 
 echo "Checked target: ${TARGET}"
-${OSSL} -checkend 2592000 > /dev/null 2>&1
-echo -n "Expires in the next 30 days? "
-if [ $? = 0 ]
-then
-    echo "NO"
-else
-    echo "YES"
-fi
 echo "Subject: "$(${OSSL} -subject|cut -d/ -f2-)
 echo "Issuer:  "$(${OSSL} -issuer|cut -d/ -f2-)
 echo "Start:   "$(${OSSL} -startdate|cut -d= -f2)
