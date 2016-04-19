@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Sean Davis <dive@endersgame.net>
+ * Copyright (c) 2015,2016 Sean Davis <dive@endersgame.net>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
